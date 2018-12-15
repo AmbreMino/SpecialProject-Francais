@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+	height: 100%;
+	margin: 0;
+}
+/* It's not responsive */
+.jumbotron {
+  	background-image: url("Photos/Paysage.jpg");
+	background-position: center top;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	background-attachment: fixed;/* Photo doesn't move when scrolling down*/
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+
+@media screen and (max-width:599px) {
+	.jumbotron {
+		background-image: url("Photos/Portrait.jpg");
+		position: relative;
+		background-position: center top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 650px;
+	}
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+	.jumbotron {
+		background-image: url("Photos/Portrait.jpg");
+		position: relative;
+		background-position: center top;
+  		background-repeat: no-repeat;
+  		background-size: contain;
+		background-attachment: fixed;
+		width: 100%;
+		height: 650px;
+	}
+}
+
+.text-center-top {
+	color: #fff;
+  	font-family: Montserrat, sans-serif;
+	padding: 170px 20px 20px 20px;
+	/*margin-top: 15%;*/
+  }
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+/* Add a color to bigger icons and set font-size */
+.logo {
+	color: #6D7993;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+} 
+/* Add a color to all icons and set the font-size */
+.logo-small {
+    color: #6D7993;
+    font-size: 50px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #6D7993;
+}
+
+.carousel-indicators li {
+    border-color: #555;
+}
+
+.carousel-indicators li.active {
+    background-color: #6D7993;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #6D7993;
+	border-color: #6D7993;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+
+/* Responsive mais ne se place pas bien
+.logo-lena {
+  margin: inherit;
+  text-align: left;
+  width: 20%;
+	position: static;
+} @media(max-width: 768px) {
+    .logo-lena {
+      width: 20%;
+    }
+  } @media(max-width: 638px) {
+      .logo-lena {
+        width: 20%;
+      }
+    } */
+/* N'est pas responsive
+.logo-lena {
+	position: fixed;
+	margin-top: -47px !important;
+	margin-left: -100px;
+	width: 7% !important;
+}*/
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-brand {
+	position: static;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #22252C ! important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+	background-color: transparent !important;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+	border-color: transparent;
+    color: #fff !important;
+	background-color: transparent !important;
+}
+
+.open .dropdown-menu {
+	background-color: #6D7993 !important ;
+	border-color: #6D7993 !important;
+	box-shadow: none;
+	text-align: right;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #fff !important;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li.active a {
+	background-color: transparent;
+	color: #22252C ! important;
+}
+
+.glyphicon-chevron-up {
+	color: #6D7993 !important;
+}
+
+.social-media {
+	text-align: right;
+}
+.fa {
+	padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+	background: white;
+	color: black;
+}
+.fa:hover {
+    color: white ;
+    background : black;
+}
+.see-more {
+	background-color: #474E5C;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	display: inline-block;
+}
+.see-more:visited {
+	background-color: #474E5C;
+	color: #fff;
+	text-decoration: none !important;
+}
+.see-more:hover {
+	background-color: #2E323C;
+	color: #fff;
+	text-decoration: none !important;
+}
+.see-more:active {
+	text-decoration: none !important;
+}
+
+#tips h4:hover {
+	font-weight: bold;
+}
+#tips a:link {
+	text-decoration: none;
+}
+#tips a:hover {
+	text-decoration: none;
+}
+.tops a:link {
+	text-decoration: none;
+	color: #818181;
+}
+.tops a:hover {
+	text-decoration: underline;
+}
+.tops a:visited{
+	text-decoration: none;
+	color: #818181;
+}
+
+.trips:hover {
+	opacity: 0.4;
+}
+
+.language-flag {
+	margin-top: -5px;
+	margin-left: -45px;
+}
