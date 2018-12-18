@@ -508,3 +508,9 @@ and (max-device-width : 667px) {
 		font-weight: 100;
 	}
 }
+
+.language-flag {
+	margin-top: -5px;
+	margin-left: -45px;
+}
+

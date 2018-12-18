@@ -242,3 +242,9 @@ h4 {
 .trips:hover {
 	opacity: 0.4;
 }
+
+.language-flag {
+	margin-top: -5px;
+	margin-left: -45px;
+}
+
