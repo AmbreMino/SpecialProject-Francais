@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
+html {
+	scroll-behavior: smooth;
+}
+
 body {
+  background-color: #F6F6F6;
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
@@ -31,8 +36,8 @@ body {
 		height: 650px;
 	}
 }
-@media only screen 
-and (min-device-width : 375px) 
+@media only screen
+and (min-device-width : 375px)
 and (max-device-width : 667px) {
 	.jumbotron {
 		background-image: url("Photos/Portrait.jpg");
@@ -84,7 +89,7 @@ h4 {
         text-align: center;
         margin: 25px 0;
     }
-} 
+}
 /* Add a color to all icons and set the font-size */
 .logo-small {
     color: #6D7993;
@@ -170,6 +175,10 @@ h4 {
 	position: static;
 }
 
+.language-flag {
+	margin-top: -5px;
+}
+
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #22252C ! important;
 }
@@ -179,6 +188,13 @@ h4 {
     border-color: transparent;
     color: #fff !important;
 	background-color: transparent !important;
+}
+@media screen and (max-width: 991px) {
+    .navbar-toggle {
+        border-color: transparent;
+		color: #fff !important;
+		background-color: transparent;
+    }
 }
 
 /* Dropdown */
@@ -278,11 +294,10 @@ h4 {
 	opacity: 0.4;
 }
 
-.language-flag {
-	margin-top: -5px;
-	margin-left: -45px;
-}
-
 #conseils {
 	letter-spacing: 1.2px;
+}
+
+#footer {
+	background-color: white;
 }

@@ -48,7 +48,7 @@ h4 {
         text-align: center;
         margin: 25px 0;
     }
-} 
+}
 /* Add a color to all icons and set the font-size */
 .logo-small {
     color: #6D7993;
@@ -237,7 +237,7 @@ h4 {
 .tops a:visited{
 	text-decoration: none;
 	color: #818181;
-} 
+}
 
 .trips:hover {
 	opacity: 0.4;
@@ -247,4 +247,3 @@ h4 {
 	margin-top: -5px;
 	margin-left: -45px;
 }
-
