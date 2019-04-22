@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+	height: 100%;
+	margin: 0;
+}
+/* It's not responsive */
+.jumbotron {
+  	background-image: url("Photos/Berlin/P1010002.JPG");
+	background-position: center top;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	background-attachment: fixed;/* Photo doesn't move when scrolling down*/
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+
+@media screen and (max-width:667px) {
+	.jumbotron {
+		background-image: url("Photos/Berlin/P1010002-Medium.JPG");
+		position: relative;
+		background-position: center top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 650px;
+	}
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+	.jumbotron {
+		background-image: url("Photos/Berlin/P1010002-Small.JPG");
+		position: relative;
+		background-position: center top;
+  		background-repeat: no-repeat;
+  		background-size: contain;
+		background-attachment: fixed;
+		width: 100%;
+		height: 650px;
+	}
+}
+
+.text-center-top {
+	color: #fff;
+  font-family: Montserrat, sans-serif;
+	padding: 230px 0px 0px 200px;
+	/*margin-top: 15%;*/
+  }
+/*.text-center-top :hover {
+  color: #000;
+  background-color: #fff;
+  background-position: center;
+
+}*/
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+/* Add a color to bigger icons and set font-size */
+.logo {
+	color: #6D7993;
+    font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+/* Add a color to all icons and set the font-size */
+.logo-small {
+    color: #6D7993;
+    font-size: 50px;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #6D7993;
+	border-color: #6D7993;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-brand {
+	position: static;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #22252C ! important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+	background-color: transparent !important;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+	border-color: transparent;
+    color: #fff !important;
+	background-color: transparent !important;
+}
+
+.open .dropdown-menu {
+	background-color: #6D7993 !important ;
+	border-color: #6D7993 !important;
+	box-shadow: none;
+	text-align: right;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #fff !important;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li.active a {
+	background-color: transparent;
+	color: #22252C ! important;
+}
+
+.glyphicon-chevron-up {
+	color: #6D7993 !important;
+}
+
+.social-media {
+	text-align: right;
+}
+.fa {
+	padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+	background: white;
+	color: black;
+}
+.fa:hover {
+    color: white ;
+    background : black;
+}
+.see-more {
+	background-color: #474E5C;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	display: inline-block;
+}
+.see-more:visited {
+	background-color: #474E5C;
+	color: #fff;
+	text-decoration: none !important;
+}
+
+.language-flag {
+	margin-top: -5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 35px;
+  left: 0;
+  background: linear-gradient(0deg, #ccccff, #6D7993);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (min-width: 1200px) {
+	.sidenav {
+  width: 230px;
+	}
+	.sidenav a {
+  font-size: 25px;
+	}
+	.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.sidenav {
+  width: 200px;
+	}
+	.sidenav a {
+  font-size: 23px;
+	}
+	.main {
+  margin-left: 180px; /* Same as the width of the sidenav */
+  font-size: 12px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.sidenav {
+  width: 170px;
+	}
+	.sidenav a {
+  font-size: 20px;
+	}
+	.main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  font-size: 12px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sidenav {
+  width: 130px;
+	}
+	.sidenav a {
+  font-size: 17px;
+	}
+	.main {
+  margin-left: 140px; /* Same as the width of the sidenav */
+  font-size: 11px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+	}
+}
+@media screen and (max-width: 599px) {
+	.sidenav {
+  width: 100px;
+	}
+	.sidenav a {
+  font-size: 17px;
+	}
+	.main {
+  margin-left: 140px; /* Same as the width of the sidenav */
+  font-size: 11px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+	}
+}
+.sidenav a {
+	color: #fff !important;
+	font-weight: normal !important;
+}
+
+.sidenav a:hover, .sidenav a:active {
+    color: #22252C ! important;
+	font-weight: normal;
+}
+
+h2 a {
+	color: #303030;
+	text-decoration: none;
+	cursor: default;
+	 -webkit-transition: all 1s ease;
+}
+h2 a:hover {
+	color: #303030;
+	text-decoration: none;
+}
+h2 a.active {
+	color: #303030;
+	text-decoration: none;
+}
+h2 a.visited {
+	color: #303030;
+	text-decoration: none;
+}
+.sidenav p {
+	color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	margin-left: 7px;
+}
+
+.glyphicon {
+	margin-left: 7px;
+	color: #fff;
+	font-size: 25px;
+}
+
+.section-intro {
+	font-style: italic;
+	font-size: 18px;
+	margin-top: -35px;
+	margin-bottom: 45px;
+}
+
+.logo-left {
+	margin-left: 2px;
+}
